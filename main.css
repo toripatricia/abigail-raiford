@@ -1,0 +1,213 @@
+body {
+  background-color: #A4B0B8;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+.menu-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* Full-height */
+  width: 0; /* Initially set to 0 to be hidden */
+  position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black background color */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* Smooth sliding transition */
+  padding-top: 60px; /* Padding on top */
+}
+
+/* Links inside the side navigation */
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you hover over the links */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Close button at the top of the menu */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Home */
+
+#home {
+  width: 100%;
+  height: 1000px;
+  background-image: url('./assets/Abby-home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#website-title {
+  position: absolute; /* Sticks to the #home section */
+  bottom: 0; /* Positions at the bottom of the #home section */
+  width: 100%;
+  text-align: center;
+  background-color: rgba(69, 89, 135, 0.7); /* Semi-transparent background */
+}
+
+#website-title h1 {
+  color: #D8DAE1;
+  text-align: center;
+  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 3;
+  -webkit-text-stroke-color: #161c32;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 15px;
+}
+
+#website-title h2 {
+  font-size: 24px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+/* Bio */
+
+#bio-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#bio {
+  margin: 20px;
+}
+
+#bio-img {
+  padding: 25px; 
+}
+
+
+#bio-img img {
+  width: 380px;
+  height: 500px;
+  border-radius: 5%;
+  box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#bio-block {
+  background-color: rgba(115, 126, 146, 0.5);
+  box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+/* Up Next */
+
+#up-next {
+  height: 1000px;
+  width: 100%;
+  background-image: url('./assets/upnext.jpg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Gallery */
+
+#gallery {
+  width: auto;
+  height: 1000px;
+}
+
+#gallery-container {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: 75%;
+  background-color: rgba(115, 126, 146, 0.5);
+}
+
+/* Media */
+
+#media {
+  width: auto;
+  height: 1000px;
+}
+
+#media-container {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: 75%;
+  background-color: rgba(115, 126, 146, 0.5);
+}
+
+/* Contact */
+
+#contact {
+  width: auto;
+  height: 1000px;
+}
+
+#contact-info-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#agent-info {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(115, 126, 146, 0.5);
+}
+
+#contact-form {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(115, 126, 146, 0.5);
+}
