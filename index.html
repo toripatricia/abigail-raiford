@@ -7,7 +7,7 @@
   <title>Abigail Raiford, soprano</title>
 
   <link rel="stylesheet" href="main.css">
-  <script src="main.js"></script>
+
 
 </head>
 
@@ -21,19 +21,25 @@
   <!-- Vertical Navbar -->
   <div id="sideNav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h1 class="menu-title">MENU</h1>
     <a href="#">Home</a>
     <a href="#">Biography</a>
     <a href="#">Schedule</a>
     <a href="#">Gallery</a>
     <a href="#">Media</a>
     <a href="#">Contact</a>
-  </div>
-
+    <img id="nav-logo" src="/assets/Abigail2.png">
   </div>
 
   <div id="website-title">
     <h1>ABIGAIL RAIFORD</h1>
     <h2>SOPRANO</h2>
+  </div>
+
+  <div class="section-divider">
+    <div class="line"></div>
+    <img src="/assets/Abigailsparkles.png" alt="Sparkles" class="sparkle-image">
+    <div class="line"></div>
   </div>
 
   <div id="bio">
@@ -60,15 +66,55 @@
             the Handel
             Choir of Baltimore.</p>
 
-          <button id="view-bio">VIEW FULL BIO</button>
+          <a href="biography.html"><button id="view-bio">VIEW FULL BIO</button></a>
         </div>
       </div>
     </div>
 
   </div>
 
+  <div class="section-divider">
+    <div class="line"></div>
+    <img src="/assets/Abigailsparkles.png" alt="Sparkles" class="sparkle-image">
+    <div class="line"></div>
+  </div>
+
   <div id="up-next">
 
+    <div id="up-next-event">
+
+      <div id="up-next-header">
+        <h1>UP NEXT</h1>
+      </div>
+
+      <div id="up-next-role">
+        <h3>SOPRANO SOLIST</h3>
+      </div>
+
+      <div id="up-next-show">
+        <h1>HANDEL'S <i>MESSIAH</i></h1>
+      </div>
+
+      <div id="up-next-company">
+        <h3>Glacier Symphony Orchestra</h3>
+      </div>
+
+      <div id="up-next-date">
+        <h4>December 7th-8th, 2024</h4>
+      </div>
+
+    </div>
+
+    <button id="view-full-schedule">VIEW FULL SCHEDULE</button>
+
+
+
+  </div>
+
+  <div class="section-divider">
+    <div class="line"></div>
+    <img src="/assets/Abigailsparkles.png" alt="Sparkles" class="sparkle-image">
+    <div class="line"></div>
   </div>
 
   <div id="gallery">
@@ -76,10 +122,39 @@
     <div id="gallery-header">
       <h1>GALLERY</h1>
     </div>
+
     <div id="gallery-container">
+
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-inner">
+            <!-- Repeat this block for each image -->
+            <div class="carousel-item">
+              <img src="/assets/Abby-4-min.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/Abby-home.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/Abby-3.jpg" alt="Image 3">
+            </div>
+            <!-- Add up to 50 images like this -->
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="carousel-arrow prev-arrow">&#10094;</button>
+        <button class="carousel-arrow next-arrow">&#10095;</button>
+      </div>
 
     </div>
 
+  </div>
+
+  <div class="section-divider">
+    <div class="line"></div>
+    <img src="/assets/Abigailsparkles.png" alt="Sparkles" class="sparkle-image">
+    <div class="line"></div>
   </div>
 
   <div id="media">
@@ -89,9 +164,24 @@
     </div>
 
     <div id="media-container">
-
+      <div class="video-background-container">
+        <video autoplay muted loop playsinline>
+          <source src="/assets/norina-excerpt.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay-content">
+          <h1>Your Text Here</h1>
+          <p>Additional text or content over the video background.</p>
+        </div>
+      </div>
     </div>
 
+  </div>
+
+  <div class="section-divider">
+    <div class="line"></div>
+    <img src="/assets/Abigailsparkles.png" alt="Sparkles" class="sparkle-image">
+    <div class="line"></div>
   </div>
 
   <div id="contact">
@@ -107,7 +197,7 @@
   </div>
 
 
-
+  <script src="main.js"></script>
 </body>
 
 </html>

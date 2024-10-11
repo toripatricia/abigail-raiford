@@ -17,6 +17,12 @@ html {
 
 /* Navbar */
 
+#sideNav{
+  position: fixed; 
+  z-index: 1000; 
+  background-color: #647870;
+}
+
 .menu-button {
   position: absolute;
   top: 20px;
@@ -29,9 +35,12 @@ html {
   color: white;
 }
 
-/* The side navigation menu */
+
 .sidenav {
-  height: 100%; /* Full-height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 100%; 
   width: 0; /* Initially set to 0 to be hidden */
   position: fixed; /* Stay in place */
   top: 0;
@@ -40,6 +49,10 @@ html {
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* Smooth sliding transition */
   padding-top: 60px; /* Padding on top */
+}
+
+.sidenav h1 {
+  color: white;
 }
 
 /* Links inside the side navigation */
@@ -66,6 +79,40 @@ html {
   margin-left: 50px;
 }
 
+#nav-logo {
+  height: 100px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.menu-title {
+  position: relative;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Times New Roman', serif; /* Example font */
+  color: white;
+  margin-bottom: 30px;
+}
+
+.menu-title::before,
+.menu-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px; /* Length of the lines */
+  height: 1px; /* Thickness of the lines */
+  background-color: white;
+}
+
+.menu-title::before {
+  left: -50px; /* Position the left line */
+}
+
+.menu-title::after {
+  right: -50px; /* Position the right line */
+}
+
+
 /* Media query for smaller screens */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -86,11 +133,11 @@ html {
 }
 
 #website-title {
-  position: absolute; /* Sticks to the #home section */
-  bottom: 0; /* Positions at the bottom of the #home section */
+  position: absolute; 
+  bottom: 0; 
   width: 100%;
   text-align: center;
-  background-color: rgba(69, 89, 135, 0.7); /* Semi-transparent background */
+  background-color: rgba(69, 89, 135, 0.7); 
 }
 
 #website-title h1 {
@@ -114,6 +161,19 @@ html {
 }
 
 /* Bio */
+
+#home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-style: italic;
+}
 
 #bio-content-wrapper {
   display: flex;
@@ -145,6 +205,97 @@ html {
   text-align: center;
 }
 
+#bio-main-img {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+#meet-abby {
+  width: 65%;
+  height: 575px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+#bio-block-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#main-bio-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72%;
+  height: fit-content;
+  background-color: #737E92;
+  padding: 20px;
+}
+
+#main-bio-block p {
+  text-align: center;
+  color: #D8DAE1;
+  font-size: 1.25vw;
+  letter-spacing: 1.5px;
+  line-height: 1.25;
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+#circle-img {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+  margin: 20px;
+}
+
+#rec-img {
+  width: 450px;
+  height: 600px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+  margin: 20px;
+}
+
+#bio-logo {
+  width: 150px;
+  height: 150px;
+}
+
+#resume-button {
+  margin: 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sparkle Border */
+
+
+.section-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; 
+}
+
+
+.line {
+    height: 1px;
+    background-color: #6c4a65; 
+    flex-grow: 1;
+}
+
+
+.sparkle-image {
+    width: 120px; 
+    height: auto;
+}
+
+
 /* Up Next */
 
 #up-next {
@@ -155,6 +306,10 @@ html {
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+#up-next-event {
+  color:#D8DAE1;
 }
 
 /* Gallery */
@@ -172,6 +327,64 @@ html {
   background-color: rgba(115, 126, 146, 0.5);
 }
 
+/* General Carousel Styling */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+/* Navigation Arrows */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
 /* Media */
 
 #media {
@@ -182,10 +395,55 @@ html {
 #media-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 75%;
-  height: 75%;
+  height: 50%;
   background-color: rgba(115, 126, 146, 0.5);
+  position: relative;
+  overflow: hidden;
 }
+
+
+.video-background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.video-background-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* Optional styling for text */
+.overlay-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.overlay-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
 
 /* Contact */
 
