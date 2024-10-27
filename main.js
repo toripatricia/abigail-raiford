@@ -20,23 +20,25 @@ function updateCarousel() {
     carousel.style.transform = `translateX(${-currentIndex * width}px)`;
 }
 
-// Next arrow
+
 nextArrow.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % totalItems;
     updateCarousel();
 });
 
-// Previous arrow
+
 prevArrow.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + totalItems) % totalItems;
     updateCarousel();
 });
 
-// Automatic scroll
+
 setInterval(() => {
     currentIndex = (currentIndex + 1) % totalItems;
     updateCarousel();
-}, 3000); // Adjust the timing as needed
+}, 3000); 
 
-// Resize handler to ensure proper scaling
+
 window.addEventListener('resize', updateCarousel);
+
+
