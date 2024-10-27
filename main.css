@@ -34,6 +34,9 @@ html {
   border: none;
   cursor: pointer;
   color: white;
+  font-family: "Wittgenstein", serif;
+  font-style: italic;
+  letter-spacing: 2px;;
 }
 
 
@@ -84,6 +87,8 @@ html {
   text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit color from parent */
   transition: transform 0.3s ease;
+  font-family: "Wittgenstein", serif;
+  letter-spacing: 2px;
 }
 
 .nav-link:hover {
@@ -109,6 +114,8 @@ html {
   font-family: 'Times New Roman', serif; /* Example font */
   color: white;
   margin-bottom: 30px;
+  font-family: "Wittgenstein", serif;
+  letter-spacing: 5px;
 }
 
 .menu-title::before,
@@ -158,12 +165,10 @@ html {
 }
 
 #website-title h1 {
+  font-family: "Wittgenstein", serif;
   color: #D8DAE1;
   text-align: center;
   text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke-width: 3;
-  -webkit-text-stroke-color: #161c32;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
@@ -172,8 +177,9 @@ html {
 }
 
 #website-title h2 {
+  font-family: "Wittgenstein", serif;
   font-size: 24px;
-  color: white;
+  color: #D8DAE1;
   letter-spacing: 3px;
 }
 
@@ -223,23 +229,26 @@ html {
 
 #bio-block h1 {
   color: #D8DAE1;
+  font-family: "Wittgenstein", serif;
 }
 
 #bio-block p {
   color: #D8DAE1;
-  font-size: 1.75vw;
+  font-family: "Wittgenstein", serif;
+  font-size: 1.5vw;
   margin: 2vw;
 }
 
 #bio-main-img {
   display: flex;
   justify-content: center;
+  height: 490px;
   margin: 25px;
 }
 
 #meet-abby {
   width: 65%;
-  height: 575px;
+  height: 100%;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
@@ -249,6 +258,7 @@ html {
 }
 
 #view-bio {
+  font-family: "Wittgenstein", serif;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: transparent; /* Transparent background */
@@ -282,16 +292,23 @@ html {
 
 
 #main-bio-block p {
+  font-family: "Wittgenstein", serif;
+  font-weight: 400;
   text-align: center;
   color: #D8DAE1;
   font-size: 1.25vw;
   letter-spacing: 1.5px;
-  line-height: 1.25;
+  line-height: 1.5;
+}
+
+.name-highlight {
+  font-weight: bold;
+  font-size: 2vw;
 }
 
 .highlight {
-  font-weight: bold;
-  font-size: 2vw;
+  font-weight: 900;
+  font-size: 1.5vw;
 }
 
 #quote-img-wrapper {
@@ -324,6 +341,10 @@ html {
   z-index: 1; 
 }
 
+.quote-text {
+  font-family: "Wittgenstein", serif;
+}
+
 #rec-img {
   width: 450px;
   height: 600px;
@@ -337,11 +358,12 @@ html {
 }
 
 #resume-button {
+  font-family: "Wittgenstein", serif;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: transparent; /* Transparent background */
-  border: 2px solid white; /* White border */
-  color: white;
+  border: 2px solid #D8DAE1; /* White border */
+  color: #D8DAE1;
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -349,7 +371,7 @@ html {
 }
 
 #resume-button:hover {
-  background-color: white;
+  background-color: #D8DAE1;
   color: #343E61;
 }
 
@@ -404,16 +426,11 @@ html {
 
 /* Header styling */
 #up-next-header {
-    display: flex; 
-    align-items: center; 
-    margin: 20px 0; 
-}
-
-#up-next-header {
-    font-size: 2rem; 
-    margin: 0; 
-    letter-spacing: 3px; 
-    font-family: 'Serif', serif;
+  font-family: "Wittgenstein", serif;
+  display: flex; 
+  align-items: center; 
+  font-size: 2rem; 
+  letter-spacing: 10px; 
 }
 
 /* Add lines before and after the header */
@@ -434,14 +451,12 @@ html {
     margin-left: 10px; /* Space between line and text */
 }
 
-/* Role and show styling */
-#up-next-role h3, #up-next-show h1, #up-next-company h3, #up-next-date h4 {
-    margin: 10px 0; /* Space between elements */
-}
 
 #up-next-show h1 {
-    font-size: 3rem; /* Larger font for the show title */
-    font-style: italic; /* Italic style for emphasis */
+    font-family: "Wittgenstein", serif;
+    font-size: 3rem; 
+    font-style: italic; 
+    letter-spacing: 5px;
 }
 
 #up-next-show i {
@@ -449,21 +464,24 @@ html {
 }
 
 #up-next-role h3, #up-next-company h3 {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+  font-family: "Wittgenstein", serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 #up-next-date h4 {
-    font-size: 1.2rem;
+  font-family: "Wittgenstein", serif;
+  font-size: 1.2rem;
 }
 
 /* Button styling */
 #view-full-schedule {
+    font-family: "Wittgenstein", serif;
     margin-top: 20px;
     padding: 10px 20px;
     background-color: transparent; /* Transparent background */
-    border: 2px solid white; /* White border */
-    color: white;
+    border: 2px solid #D8DAE1; /* White border */
+    color: #D8DAE1;
     cursor: pointer;
     font-size: 1rem;
     letter-spacing: 2px;
@@ -471,8 +489,8 @@ html {
 }
 
 #view-full-schedule:hover {
-    background-color: white;
-    color: black;
+    background-color: #D8DAE1;
+    color: rgb(25, 27, 61);
 }
 
 /* Schedule */
@@ -487,7 +505,11 @@ html {
 }
 
 #schedule-title {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+}
+
+#schedule-title h1 {
+  font-family: "Wittgenstein", serif;
 }
 
 #schedule-container {
@@ -509,8 +531,19 @@ html {
 }
 
 #upcoming-box h1 {
+  font-family: "Wittgenstein", serif;
   margin: 3vw;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+}
+
+#upcoming-box h3 {
+  font-family: "Wittgenstein", serif;
+  letter-spacing: 2px;
+}
+
+#upcoming-box h4 {
+  font-family: "Wittgenstein", serif;
+  letter-spacing: 2px;
 }
 
 #glacier {
@@ -529,6 +562,7 @@ html {
 }
 
 #recent-box h1 {
+  font-family: "Wittgenstein", serif;
   margin: 3vw;
   letter-spacing: 3px;
 }
@@ -545,13 +579,16 @@ html {
 }
 
 #gallery-header {
+  font-family: "Wittgenstein", serif;
   color: #D8DAE1;
   letter-spacing: 5px;
 }
 
 #gallery-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 75%;
   height: 60%;
   background-color: rgba(100, 120, 112, 0.8);
@@ -593,8 +630,7 @@ html {
 .carousel-arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     color: white;
     border: none;
     font-size: 2rem;
@@ -603,19 +639,19 @@ html {
 }
 
 .prev-arrow {
-    left: 10px;
+    left: 30px;
 }
 
 .next-arrow {
-    right: 10px;
+    right: 30px;
 }
 
 .carousel-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.5); 
 }
 
 
-/* Media */
+/* Media Home */
 
 #media {
   display: flex;
@@ -627,7 +663,7 @@ html {
 
 #media-container {
   width: 75%;
-  height: 70%;
+  height: 65%;
   position: relative;
   overflow: hidden;
   z-index: 5;
@@ -636,10 +672,15 @@ html {
 }
 
 .media-header {
-    display: flex; /* Use flex to arrange lines and text in a row */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    margin-bottom: 20px; /* Add margin below if needed */
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  margin-bottom: 20px; 
+}
+
+.media-header h1 {
+  font-family: "Wittgenstein", serif;
+  letter-spacing: 10px;
 }
 
 .media-header::before,
@@ -673,16 +714,17 @@ html {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: transparent; /* Transparent background */
-    border: 2px solid white; /* White border */
-    color: white;
+    border: 2px solid #D8DAE1; /* White border */
+    color: #D8DAE1;
     cursor: pointer;
+    font-family: "Wittgenstein", serif;
     font-size: 1rem;
     letter-spacing: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 #view-media:hover {
-    background-color: white;
+    background-color: #D8DAE1;
     color: black;
 }
 
@@ -703,9 +745,10 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: #D8DAE1;
   z-index: 1;
 }
+
 
 /* Optional styling for text */
 .overlay-content h1 {
@@ -718,6 +761,95 @@ html {
   margin-top: 10px;
 }
 
+/*Media Page */
+
+#media-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+#top-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3vw; 
+  padding: 3vw;
+  margin-top: 5vw;
+}
+
+#audio-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  height: auto;
+  background-color: rgba(53,45,68, 0.5);
+  padding-top: 6vw;
+  margin-right: 5vw;
+}
+
+#media-page-header {
+  position: relative;
+  text-align: center;
+  color: white; /* Text color */
+}
+
+#media-page-header h1 {
+  display: inline-block; /* Keeps heading centered */
+  position: relative; 
+  padding: 0 10px; 
+  letter-spacing: 3px;
+  font-style: italic;
+}
+
+#media-page-header h1::before,
+#media-page-header h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%; /* Adjust based on line length needed */
+  height: 2px; /* Line thickness */
+  background-color: white; /* Line color */
+}
+
+#media-page-header h1::before {
+  left: -20%; /* Positions line on the left side */
+  transform: translateX(-100%);
+}
+
+#media-page-header h1::after {
+  right: -20%; /* Positions line on the right side */
+  transform: translateX(100%);
+}
+
+
+#media-photo {
+  width: 30%;
+  height: 70%;
+}
+
+#abby-media {
+  width: 100%;
+  height: auto;
+}
+
+.audio-file {
+  padding: 1vw;
+}
+
+#video-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#video-wrapper iframe {
+  padding: 2vw;
+}
 
 /* Contact */
 
@@ -733,6 +865,11 @@ html {
   padding-bottom: 4vw;
 }
 
+#contact-header h1 {
+  font-family: "Wittgenstein", serif;
+  letter-spacing: 5px;
+}
+
 #contact-info-wrapper{
   display: flex;
   flex-direction: row;
@@ -745,9 +882,26 @@ html {
   align-items: center;
   flex-direction: column;
   width: 40%;
-  height: fit-content;
+  height: 520px;
   background-color: rgba(115, 126, 146, 0.5);
   color: #D8DAE1
+}
+
+#agent-info a {
+  color: inherit;
+}
+
+#agent-info h2 {
+  font-family: "Wittgenstein", serif;
+  letter-spacing: 3px;
+}
+
+#agent-info h3 {
+  font-family: "Wittgenstein", serif;
+}
+
+#agent-info h4 {
+  font-family: "Wittgenstein", serif;
 }
 
 #iam {
@@ -756,7 +910,7 @@ html {
   width: 200px;
 }
 
-#contact-form {
+#contact-form-wrapper {
   display: flex;
   text-align: center;
   align-items: center;
@@ -765,6 +919,51 @@ html {
   height: fit-content;
   background-color: rgba(115, 126, 146, 0.5);
   color: #D8DAE1;
+}
+
+#contact-form-wrapper h2 {
+  font-family: "Wittgenstein", serif;
+  letter-spacing: 3px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color:rgba(33, 46, 75, 0.7); 
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(33, 46, 75, 0.7); 
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgba(69, 89, 135, 0.7);;
 }
 
 /*Footer*/
