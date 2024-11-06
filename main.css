@@ -21,7 +21,7 @@ html {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.6s ease-out, transform 1s ease-out;
 }
 
 .fade-in-visible {
@@ -42,7 +42,7 @@ html {
 
 .fade-in-left {
     opacity: 0; 
-    animation: fadeInLeft 0.8s ease forwards; 
+    animation: fadeInLeft 1s ease forwards; 
 }
 
 
@@ -263,23 +263,27 @@ html {
 }
 
 #bio-img img {
-  width: 380px;
-  height: 500px;
+  width: 400px;
+  height: auto;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 #bio-block {
-  background-color: rgba(115, 126, 146, 0.5);
+  background-color: rgba(115, 126, 146);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
   width: 50%;
-  max-height: 500px;
+  max-height: fit-content;
+  padding-bottom: 2vw;
   text-align: center;
   margin: 5vw;
 }
 
 #bio-block h1 {
-  color: #D8DAE1;
+  color:#303042;
   font-family: "Wittgenstein", serif;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 
 #bio-block p {
@@ -312,8 +316,8 @@ html {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: transparent; 
-  border: 2px solid #D8DAE1; 
-  color: #D8DAE1;
+  border: 2px solid #303042; 
+  color: #303042;
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -322,7 +326,7 @@ html {
 
 #view-bio:hover {
   background-color: #D8DAE1;
-  color: #343E61;
+  color: #303042;
 }
 
 #main-bio-block {
@@ -333,11 +337,6 @@ html {
   height: fit-content;
   background-color: #737E92;
   padding: 20px;
-}
-
-#bio-heading {
-  font-style: italic;
-  letter-spacing: 3px;
 }
 
 
@@ -353,12 +352,19 @@ html {
 
 .name-highlight {
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 2.5vw;
+  color:#303042;
 }
 
 .highlight {
   font-weight: 900;
   font-size: 1.5vw;
+  color:#303042;
+}
+
+.small-highlight {
+  font-weight: bold;
+  color:#303042;
 }
 
 #quote-img-wrapper {
@@ -410,10 +416,11 @@ html {
 #resume-button {
   font-family: "Wittgenstein", serif;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px 20px;
   background-color: transparent; 
-  border: 2px solid #D8DAE1; 
-  color: #D8DAE1;
+  border: 2px solid #303042; 
+  color:#303042;
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -422,7 +429,7 @@ html {
 
 #resume-button:hover {
   background-color: #D8DAE1;
-  color: #343E61;
+  color:#404058;
 }
 
 
@@ -496,7 +503,7 @@ html {
     content: ""; 
     width: 15%; 
     height: 2px; 
-    background-color: white; 
+    background-color: #D8DAE1; 
 }
 
 #up-next-header::before {
@@ -567,13 +574,13 @@ html {
 
 #schedule-title h1 {
   font-family: "Wittgenstein", serif;
+  color:#303042;
 }
 
 #schedule-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:#D8DAE1;
 }
 
 #upcoming-box {
@@ -599,21 +606,25 @@ html {
   margin: 3vw;
   letter-spacing: 5px;
   padding: 1vw;
+  color:#2d332f;
 }
 
 #upcoming-box h2 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
+  color:#D8DAE1;
 }
 
 #upcoming-box h3 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
+  color:#D8DAE1;
 }
 
 #upcoming-box h4 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
+  color:#D8DAE1;
 }
 
 #upcoming-img {
@@ -624,6 +635,7 @@ html {
 
 #glacier {
   width: 50%;
+  transition: 0.3s;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
@@ -658,7 +670,7 @@ html {
   font-family: "Wittgenstein", serif;
   margin: 3vw;
   letter-spacing: 5px;
-  color:#D8DAE1;
+  color:#2d332f;
   padding-top: 1vw;
   padding-bottom: 3vw;
 }
@@ -666,23 +678,26 @@ html {
 #recent-box .divider {
   width: 80%;
   border: none;
-  border-top: 1px solid white; 
+  border-top: 1px solid #D8DAE1; 
   margin: 1rem 0; 
 }
 
 #recent-box h2 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
+  color: #D8DAE1;
 }
 
 #recent-box h3 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
+  color: #D8DAE1;
 }
 
 #recent-box h4 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
+  color: #D8DAE1;
 }
 
 /* Gallery */
@@ -698,8 +713,9 @@ html {
 
 #gallery-header {
   font-family: "Wittgenstein", serif;
-  color: #D8DAE1;
+  color:#2d332f;
   letter-spacing: 5px;
+  padding-top: 1vw;
 }
 
 #gallery-container {
@@ -724,7 +740,7 @@ html {
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .carousel-inner {
@@ -750,7 +766,7 @@ html {
     position: absolute;
     top: 50%;
     background-color: transparent;
-    color: white;
+    color: #D8DAE1;
     border: none;
     font-size: 2rem;
     cursor: pointer;
@@ -915,7 +931,7 @@ html {
 #media-page-header {
   position: relative;
   text-align: center;
-  color: white; 
+  color: #D8DAE1; 
 }
 
 #media-page-header h1 {
@@ -934,7 +950,7 @@ html {
   top: 50%;
   width: 40%;
   height: 2px; 
-  background-color: white; 
+  background-color: #D8DAE1; 
 }
 
 #media-page-header h1::before {
@@ -949,7 +965,7 @@ html {
 
 
 #media-photo {
-  width: 35%;
+  width: 30%;
   height: 70%;
 }
 
@@ -993,7 +1009,7 @@ html {
 }
 
 #contact-header h1 {
-  color: #D8DAE1;
+  color: #2b2b35;
   font-family: "Wittgenstein", serif;
   letter-spacing: 5px;
 }
@@ -1025,6 +1041,7 @@ html {
 #agent-info h2 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 3px;
+  color:#2d332f;
 }
 
 #agent-info h3 {
@@ -1065,6 +1082,7 @@ html {
 #contact-form-wrapper h2 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 3px;
+  color:#2d332f;
 }
 
 .contact-form {
@@ -1132,7 +1150,7 @@ html {
 #social-wrapper h2 {
   font-family: "Wittgenstein", serif;
   font-weight: 400;
-  color:#D8DAE1;
+  color:#1b1b1f;
   letter-spacing: 2px;
   font-size: 30px;
   text-align: center;
@@ -1155,7 +1173,7 @@ html {
 
 #facebook {
   color: #DED9CE;
-  transition: ease;
+  transition: 0.5s;
 }
 
 #facebook:hover {
@@ -1165,7 +1183,7 @@ html {
 
 #instagram {
   color: #DED9CE;
-  transition: ease;
+  transition: 0.5s;
 }
 
 #instagram:hover {
@@ -1175,7 +1193,7 @@ html {
 
 #youtube {
   color: #DED9CE;
-  transition: ease;
+  transition: 0.5s;
 }
 
 #youtube:hover {
@@ -1200,6 +1218,6 @@ html {
 
 #footer-text p {
   font-family: "Wittgenstein", serif;
-  color:#DED9CE;
+  color:#696990;
   font-size: 12px;
 }
