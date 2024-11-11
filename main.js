@@ -84,3 +84,5 @@ document.addEventListener("DOMContentLoaded", function() {
         element.style.opacity = "1"; // Ensure element is visible before animation
     });
 });
+
+

@@ -895,6 +895,8 @@ html {
   margin-top: 10px;
 }
 
+/*Media page */
+
 
 #media-wrapper {
   display: flex;
@@ -923,7 +925,8 @@ html {
   width: 35%;
   height: auto;
   background-color: rgba(53,45,68, 0.5);
-  padding-top: 6vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   margin-right: 5vw;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 }
@@ -937,7 +940,6 @@ html {
 #media-page-header h1 {
   display: inline-block; 
   position: relative; 
-  padding: 0 10px; 
   letter-spacing: 5px;
   font-style: italic;
   font-family: "Wittgenstein", serif;
@@ -975,8 +977,15 @@ html {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
+.text-wrapper {
+  text-align: center;
+  color: #D8DAE1;
+  font-family: "Wittgenstein", serif;
+  font-size: 1.1vw;
+}
+
 .audio-file {
-  padding: 2vw;
+  padding: 0.5vw;
 }
 
 #video-wrapper {
