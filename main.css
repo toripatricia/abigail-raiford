@@ -232,7 +232,7 @@ html {
 @media (max-width: 768px) {
 
   #home {
-    background-size: cover;
+    background-size: contain;
   }
 
   #website-title h1 {
@@ -625,7 +625,7 @@ html {
 
   #up-next {
     background-position: calc(50% - 10vw) center;
-    background-size: cover;
+    background-size: contain;
   }
 
   #up-next-wrapper {
