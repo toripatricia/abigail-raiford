@@ -200,39 +200,55 @@ html {
   bottom: 0; 
   width: 100%;
   height: 35%;
-  text-align: center;
   background-color: rgba(69, 89, 135, 0.7); 
   padding-top: 1vw;
   padding-bottom: 1vw;
 }
 
 #website-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Mrs Saint Delafield", serif;
   color: #D8DAE1;
-  text-align: center;
   text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
-  font-size: 150px;
+  font-size: 11vw;
   font-weight: 400;
   line-height: 0;
-  letter-spacing: 5px;
+  letter-spacing: 0.5vw;
 }
 
 #website-title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Wittgenstein", serif;
-  font-size: 30px;
+  font-size: 3vw;
   color: #D8DAE1;
-  letter-spacing: 10px;
+  letter-spacing: 1vw;
   text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
 }
+
+@media (max-width: 768px) {
+
+  #website-title h1 {
+    padding-top: 5vw;
+  }
+
+  #website-title {
+    height: fit-content;
+  }
+}
+
 
 /* Bio */
 
 #home-btn {
   font-family: "Wittgenstein", serif;
   position: fixed;
-  top: 20px;
-  left: 20px;
-  font-size: 20px;
+  top: 2vw;
+  left: 1vw;
+  font-size: 1.5vw;
   padding: 10px 20px;
   background-color: transparent;
   border: none;
@@ -292,6 +308,25 @@ html {
   font-size: 1.5vw;
   margin: 2vw;
 }
+
+@media (max-width: 768px) {
+
+  #bio-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #bio-block {
+    width: 80%;
+  }
+
+  #bio-block p {
+    font-size: 3vw;
+  }
+}
+
+/*Main bio page*/
 
 #bio-main-img {
   display: flex;
@@ -353,18 +388,18 @@ html {
 .name-highlight {
   font-weight: bold;
   font-size: 2.5vw;
-  color:#303042;
+  color:#444460;
 }
 
 .highlight {
   font-weight: 900;
   font-size: 1.5vw;
-  color:#303042;
+  color:#444460;
 }
 
 .small-highlight {
   font-weight: bold;
-  color:#303042;
+  color:#444460;
 }
 
 #quote-img-wrapper {
@@ -402,8 +437,7 @@ html {
 }
 
 #rec-img {
-  width: 450px;
-  height: 600px;
+  width: 35vw;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
   margin: 20px;
 }
@@ -419,8 +453,8 @@ html {
   margin-bottom: 20px;
   padding: 10px 20px;
   background-color: transparent; 
-  border: 2px solid #303042; 
-  color:#303042;
+  border: 2px solid #444460; 
+  color:#444460;
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -429,7 +463,39 @@ html {
 
 #resume-button:hover {
   background-color: #D8DAE1;
-  color:#404058;
+  color:#444460;
+}
+
+@media (max-width: 768px) {
+
+  #main-bio-block {
+    width: 85%;
+  } 
+
+  #main-bio-block p { 
+    font-size: 2vw;
+}
+
+#quote-wrapper {
+  width: 100%;
+}
+
+.highlight {
+  font-size: 2.25vw;
+}
+
+#home-btn {
+    font-size: 2.5vw;
+    position: static;
+  }
+
+  #bio-main-img {
+  width: 100%;
+}
+
+#rec-img {
+  width: 50vw;
+}
 }
 
 
@@ -494,7 +560,7 @@ html {
   font-family: "Wittgenstein", serif;
   display: flex; 
   align-items: center; 
-  font-size: 2rem; 
+  font-size: 2.5vw; 
   letter-spacing: 10px; 
 }
 
@@ -520,10 +586,6 @@ html {
     font-size: 3rem; 
     font-style: italic; 
     letter-spacing: 5px;
-}
-
-#up-next-show i {
-    font-style: italic; 
 }
 
 #up-next-role h3, #up-next-company h3 {
@@ -555,6 +617,50 @@ html {
     color: rgb(25, 27, 61);
 }
 
+@media (max-width: 768px) {
+
+  #up-next {
+    background-position: calc(50% - 10vw) center;
+  }
+
+  #up-next-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   #up-next-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   }
+
+  #up-next-header h1 {
+    font-size: 8vw;
+  }
+
+  #up-next-header::before,
+#up-next-header::after {
+    content: ""; 
+    width: 15%; 
+    height: 1px; 
+    background-color: #D8DAE1; 
+}
+
+#up-next-header::before {
+    margin-right: 10px; 
+}
+
+#up-next-header::after {
+    margin-left: 10px;
+}
+
+#up-next-show h1 {
+  font-size: 7vw;
+}
+
+}
+
 /* Schedule */
 
 #title-box {
@@ -575,6 +681,7 @@ html {
 #schedule-title h1 {
   font-family: "Wittgenstein", serif;
   color:#303042;
+  font-size: 3vw;
 }
 
 #schedule-container {
@@ -603,6 +710,7 @@ html {
 
 #upcoming-box h1 {
   font-family: "Wittgenstein", serif;
+  font-size: 2.5vw;
   margin: 3vw;
   letter-spacing: 5px;
   padding: 1vw;
@@ -613,18 +721,21 @@ html {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
   color:#D8DAE1;
+  font-size: 2.25vw;
 }
 
 #upcoming-box h3 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
   color:#D8DAE1;
+  font-size: 1.75vw;
 }
 
 #upcoming-box h4 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
   color:#D8DAE1;
+  font-size: 1.5vw;
 }
 
 #upcoming-img {
@@ -667,6 +778,7 @@ html {
 }
 
 #recent-box h1 {
+  font-size: 2.5vw;
   font-family: "Wittgenstein", serif;
   margin: 3vw;
   letter-spacing: 5px;
@@ -686,18 +798,68 @@ html {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
   color: #D8DAE1;
+  font-size: 2.25vw;
 }
 
 #recent-box h3 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
   color: #D8DAE1;
+  font-size: 1.75vw;
 }
 
 #recent-box h4 {
   font-family: "Wittgenstein", serif;
   letter-spacing: 2px;
   color: #D8DAE1;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 768px) {
+
+  #schedule-title h1 {
+    font-size: 5vw;
+  }
+
+  #upcoming-box {
+    width: 85%;
+  }
+
+  #upcoming-box h1 {
+    font-size: 4vw;
+  }
+
+  #upcoming-box h2 {
+    font-size: 3vw;
+  }
+
+   #upcoming-box h3 {
+    font-size: 2vw;
+   }
+
+   #upcoming-box h4 {
+    font-size: 1.75vw;
+   }
+
+   #recent-box {
+    width: 85%;
+   }
+
+   #recent-box h1 {
+    font-size: 4vw;
+  }
+
+  #recent-box h2 {
+    font-size: 2.75vw;
+  }
+
+   #recent-box h3 {
+    font-size: 2vw;
+   }
+
+   #recent-box h4 {
+    font-size: 1.75vw;
+   }
 }
 
 /* Gallery */
@@ -785,6 +947,13 @@ html {
   transform: scale(1.5); 
 }
 
+@media (max-width: 768px) {
+
+  #gallery-container {
+    width: 100%;
+  }
+}
+
 
 /* Media Home */
 
@@ -798,7 +967,7 @@ html {
 
 #media-container {
   width: 100%;
-  height: 65%;
+  height: 75%;
   position: relative;
   overflow: hidden;
   z-index: 5;
@@ -895,6 +1064,8 @@ html {
   margin-top: 10px;
 }
 
+ 
+
 /*Media page */
 
 
@@ -904,7 +1075,6 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-
 }
 
 
@@ -912,7 +1082,6 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: stretch;
   gap: 3vw; 
   padding: 3vw;
   margin-top: 5vw;
@@ -996,6 +1165,29 @@ html {
 #video-wrapper iframe {
   margin: 2vw;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+
+  #top-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #audio-box {
+    width: 85%;
+    padding-bottom: 4vw;
+  }
+
+  #media-photo {
+    width: 50%
+  }
+
+  .text-wrapper {
+    font-size: 2vw;
+  }
 }
 
 /* Contact */
@@ -1229,4 +1421,41 @@ html {
   font-family: "Wittgenstein", serif;
   color:#696990;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+
+  #contact-header-wrapper {
+    width: 65%;
+    margin-bottom: 10vw;
+  }
+
+  #contact-header h1 {
+    font-size: 4vw
+  }
+  
+  #contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #agent-info {
+    width: 90%;
+    margin-bottom: 10vw;
+  }
+
+  #contact-form-wrapper {
+    width: 90%;
+    margin-bottom: 10vw;
+  }
+
+  #social-wrapper {
+    width: 85%;
+  }
+
+  #footer-text p {
+    font-size: 1.5vw;
+  }
 }
