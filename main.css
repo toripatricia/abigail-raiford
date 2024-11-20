@@ -230,10 +230,8 @@ html {
 @media (max-width: 768px) {
 
   #home {
-    /* background-image: url('./assets/abby-home-resized.png?v=1'); */
     background-size: cover;
-    /* width: 100%;
-    height: 100vh; */
+    height: 93vh;
   }
 
   #website-title h1 {
@@ -337,7 +335,7 @@ html {
   display: flex;
   justify-content: center;
   height: fit-content;
-  margin: 25px;
+  margin-bottom: 25px;
 }
 
 #meet-abby {
@@ -391,13 +389,13 @@ html {
 }
 
 .name-highlight {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 2.5vw;
   color:#444460;
 }
 
 .highlight {
-  font-weight: 900;
+  font-weight: bold;
   font-size: 1.5vw;
   color:#444460;
 }
@@ -478,15 +476,19 @@ html {
   } 
 
   #main-bio-block p { 
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 #quote-wrapper {
   width: 100%;
 }
 
+.name-highlight {
+  font-size: 3.75vw;
+}
+
 .highlight {
-  font-size: 2.25vw;
+  font-size: 3.5vw;
 }
 
 #home-btn {
@@ -626,6 +628,7 @@ html {
   #up-next {
     background-image: url('/assets/upnext-resized.png');
     background-size: cover;
+    background-position: left;
   }
 
   #up-next-wrapper {
@@ -1086,7 +1089,7 @@ html {
 #top-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 3vw; 
   padding: 3vw;
   margin-top: 5vw;
@@ -1101,7 +1104,6 @@ html {
   background-color: rgba(53,45,68, 0.5);
   padding-top: 1vw;
   padding-bottom: 1vw;
-  margin-right: 5vw;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
@@ -1138,7 +1140,6 @@ html {
   right: -20%;
   transform: translateX(100%);
 }
-
 
 #media-photo {
   width: 30%;
@@ -1182,8 +1183,12 @@ html {
   }
 
   #audio-box {
-    width: 85%;
+    width: 90%;
     padding-bottom: 4vw;
+  }
+
+  #video-wrapper iframe {
+    width: 400px;
   }
 
   #media-photo {
@@ -1449,6 +1454,7 @@ html {
   #agent-info {
     width: 90%;
     margin-bottom: 10vw;
+    padding-bottom: 2vw;
   }
 
   #contact-form-wrapper {
