@@ -231,7 +231,7 @@ html {
 @media (max-width: 768px) {
 
   #home {
-    background-image: url('./assets/Abby-home-resized.jpg');
+    background-image: url('./assets/abby-home-resized.png');
     width: 100%;
     height: 100vh;
   }
@@ -625,7 +625,7 @@ html {
 @media (max-width: 768px) {
 
   #up-next {
-    background-image: url('/assets/upnext-resized.jpg');
+    background-image: url('/assets/upnext-resized.png');
     width: 100%;
     height: 100vh;
   }
