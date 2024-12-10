@@ -50,7 +50,7 @@ prevArrow.addEventListener('click', () => {
 setInterval(() => {
     currentIndex = (currentIndex + 1) % totalItems;
     updateCarousel();
-}, 3000); 
+}, 6000); 
 
 
 window.addEventListener('resize', updateCarousel);
@@ -84,5 +84,3 @@ document.addEventListener("DOMContentLoaded", function() {
         element.style.opacity = "1"; // Ensure element is visible before animation
     });
 });
-
-
