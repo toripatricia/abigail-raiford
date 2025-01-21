@@ -31,29 +31,40 @@ const totalItems = carouselItems.length;
 
 function updateCarousel() {
     const width = carouselItems[0].clientWidth;
+    carousel.style.transition = 'transform 0.5s ease';
     carousel.style.transform = `translateX(${-currentIndex * width}px)`;
 }
 
+// Auto-scroll functionality with pause on user interaction
+let autoScroll = setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+}, 6000);
 
+function resetAutoScroll() {
+    clearInterval(autoScroll);
+    autoScroll = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalItems;
+        updateCarousel();
+    }, 6000);
+}
+
+// Event listeners for next and previous arrows
 nextArrow.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % totalItems;
     updateCarousel();
+    resetAutoScroll(); // Restart auto-scroll
 });
-
 
 prevArrow.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + totalItems) % totalItems;
     updateCarousel();
+    resetAutoScroll(); // Restart auto-scroll
 });
 
-
-setInterval(() => {
-    currentIndex = (currentIndex + 1) % totalItems;
-    updateCarousel();
-}, 6000); 
-
-
+// Adjust carousel on window resize
 window.addEventListener('resize', updateCarousel);
+
 
 
 /* scroll animation */
