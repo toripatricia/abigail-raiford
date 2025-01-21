@@ -230,12 +230,29 @@ html {
 @media (max-width: 768px) {
 
   #home {
+    background-image: url('/assets/abby-home-resized.png');
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
   }
 
   #website-title h1 {
-    padding-top: 5vw;
+    padding-top: 2vw;
+  }
+
+  #website-title {
+    height: fit-content;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #home {
+    background-image: url('/assets/abby-home-resized.png');
+    background-size: cover;
+    height: 100vh;
+  }
+
+  #website-title h1 {
+    padding-top: 2vw;
   }
 
   #website-title {
@@ -314,6 +331,22 @@ html {
 
 @media (max-width: 768px) {
 
+  #bio-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #bio-block {
+    width: 80%;
+  }
+
+  #bio-block p {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
   #bio-content-wrapper {
     display: flex;
     flex-direction: column;
@@ -506,6 +539,8 @@ html {
 }
 
 
+
+
 /* Sparkle Border */
 
 
@@ -667,6 +702,50 @@ html {
   font-size: 7vw;
 }
 
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #up-next {
+    background-image: url('/assets/upnext-resized.png');
+    background-size: cover;
+    background-position: left;
+  }
+
+  #up-next-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   #up-next-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   }
+
+  #up-next-header h1 {
+    font-size: 8vw;
+  }
+
+  #up-next-header::before,
+#up-next-header::after {
+    content: ""; 
+    width: 15%; 
+    height: 1px; 
+    background-color: #D8DAE1; 
+}
+
+#up-next-header::before {
+    margin-right: 10px; 
+}
+
+#up-next-header::after {
+    margin-left: 10px;
+}
+
+#up-next-show h1 {
+  font-size: 7vw;
+}
 }
 
 /* Schedule */
@@ -900,12 +979,13 @@ html {
 }
 
 /* General Carousel Styling */
+
 .carousel-container {
     position: relative;
     width: 100%;
     max-width: 1000px; 
     overflow: hidden;
-    padding: 2vw;
+    padding-bottom: 2vw;
 }
 
 .carousel {
@@ -919,7 +999,7 @@ html {
 }
 
 .carousel-item {
-    min-width: 100%;
+    flex: 0 0 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -960,6 +1040,11 @@ html {
   #gallery-container {
     width: 100%;
   }
+
+  .carousel-item img {
+    max-width: 100%;
+    object-fit: cover; /* Ensure image fills its container */
+    }
 }
 
 
