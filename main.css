@@ -197,10 +197,11 @@ html {
   position: absolute; 
   bottom: 0; 
   width: 100%;
-  height: 35%;
+  height: 30%;
+  line-height: 0;
   background-color: rgba(69, 89, 135, 0.7); 
   padding-top: 1vw;
-  padding-bottom: 1vw;
+  overflow: hidden;
 }
 
 #website-title h1 {
@@ -210,7 +211,7 @@ html {
   font-family: "Mrs Saint Delafield", serif;
   color: #D8DAE1;
   text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
-  font-size: 11vw;
+  font-size: 9vw;
   font-weight: 400;
   line-height: 0;
   letter-spacing: 0.5vw;
@@ -221,7 +222,7 @@ html {
   justify-content: center;
   align-items: center;
   font-family: "Wittgenstein", serif;
-  font-size: 3vw;
+  font-size: 2vw;
   color: #D8DAE1;
   letter-spacing: 1vw;
   text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
@@ -295,23 +296,28 @@ html {
 }
 
 #bio-img {
-  margin: 5vw;
+  width: 50%;
+  margin: 2vw;
 }
 
 #bio-img img {
-  width: 400px;
+  width: 100%;
   height: auto;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 #bio-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   background-color: rgba(115, 126, 146);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
   width: 50%;
-  max-height: fit-content;
-  padding-bottom: 2vw;
+  max-height: 100%;
+  padding: 2vw;
   text-align: center;
-  margin: 5vw;
+  margin-left: 5vw;
 }
 
 #bio-block h1 {
@@ -325,8 +331,7 @@ html {
 #bio-block p {
   color: #D8DAE1;
   font-family: "Wittgenstein", serif;
-  font-size: 1.5vw;
-  margin: 2vw;
+  font-size: 1.25vw;
 }
 
 @media (max-width: 768px) {
@@ -434,7 +439,7 @@ html {
 }
 
 .small-highlight {
-  font-weight: bold;
+  font-weight: 900;
   color:#444460;
 }
 
@@ -449,8 +454,8 @@ html {
 
 #circle-img {
   border-radius: 50%;
-  height: 350px;
-  width: 350px;
+  height: 450px;
+  width: 450px;
   object-fit: cover;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
   margin: 20px;
@@ -571,12 +576,13 @@ html {
   height: 100vh;
   width: 100%;
   background-image: url('./assets/upnext.jpg');
-  background-size: 100% auto;
+  background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
   display: flex;
   align-items: center; 
   justify-content: flex-start;
+  overflow: hidden;
 }
 
 .overlay {
@@ -601,7 +607,7 @@ html {
   font-family: "Wittgenstein", serif;
   display: flex; 
   align-items: center; 
-  font-size: 2.5vw; 
+  font-size: clamp(2rem, 2.5vw, 2rem);
   letter-spacing: 10px; 
 }
 
@@ -670,6 +676,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.25;
   }
 
    #up-next-header {
@@ -1126,13 +1133,16 @@ html {
 }
 
 .video-background-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%); /* Center the video */
+  min-width: 100%; /* Ensure the video covers the full width */
+  min-height: 100%; /* Ensure the video covers the full height */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Place the video behind other content */
+  object-fit: cover; /* Ensure the video covers the container */
 }
 
 
