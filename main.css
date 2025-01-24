@@ -192,6 +192,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
+  overscroll-behavior: none;
 }
 
 #website-title {
@@ -250,6 +251,7 @@ html {
   #website-title h2 {
     font-size: 5vw; /* Ensure visibility on mobile */
     letter-spacing: 0.2vw; /* Adjust spacing for smaller text */
+}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
