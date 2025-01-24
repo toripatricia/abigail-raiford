@@ -198,10 +198,11 @@ html {
   position: absolute; 
   bottom: 0; 
   width: 100%;
-  height: 30%;
+  height: fit-content;
   line-height: 0;
   background-color: rgba(69, 89, 135, 0.7); 
   padding-top: 1vw;
+  padding-bottom: 1vw;
   overflow: hidden;
 }
 
@@ -335,6 +336,7 @@ html {
   color: #D8DAE1;
   font-family: "Wittgenstein", serif;
   font-size: 1.25vw;
+  line-height: 1.75;
 }
 
 @media (max-width: 768px) {
@@ -1152,6 +1154,10 @@ html {
 
   .video-background-container video {
     transform: translate(-50%, -50%);
+  }
+
+  .video-background-container {
+    max-height: 90%;
   }
 }
 
