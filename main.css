@@ -262,6 +262,7 @@ html {
 
   #website-title {
     height: fit-content;
+    overflow: auto;
   }
 }
 
