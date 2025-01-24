@@ -199,10 +199,9 @@ html {
   bottom: 0; 
   width: 100%;
   height: fit-content;
-  line-height: 0;
+  line-height: normal;
   background-color: rgba(69, 89, 135, 0.7); 
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  padding: 1vw;
   overflow: hidden;
 }
 
@@ -228,6 +227,7 @@ html {
   color: #D8DAE1;
   letter-spacing: 1vw;
   text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -239,13 +239,17 @@ html {
     margin: 0;
   }
 
+  #website-title {
+    height: fit-content;
+  }
+
   #website-title h1 {
     padding-top: 2vw;
   }
 
-  #website-title {
-    height: fit-content;
-  }
+  #website-title h2 {
+    font-size: 5vw; /* Ensure visibility on mobile */
+    letter-spacing: 0.2vw; /* Adjust spacing for smaller text */
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
