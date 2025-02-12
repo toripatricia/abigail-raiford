@@ -344,7 +344,7 @@ html {
   max-height: 100%;
   padding: 2vw;
   text-align: center;
-  margin-left: 5vw;
+  margin: auto;
 }
 
 #bio-block h1 {
