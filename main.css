@@ -188,7 +188,7 @@ html {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url('./assets/Abby-home.jpg?v=1');
+  background-image: url('./assets/Abigail\ Raiford\ -\ 21\ copy.jpg');
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -213,11 +213,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Mrs Saint Delafield", serif;
+  font-family: "Baskerville";
   color: #D8DAE1;
   text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
-  font-size: 9vw;
-  font-weight: 400;
+  font-size: 7vw;
+  font-weight: 100;
   line-height: 0;
   letter-spacing: 0.5vw;
 }
@@ -243,7 +243,7 @@ html {
   }
 
   #home {
-    background-image: url('/assets/abby-home-resized.png');
+    background-image: url('/assets/Abigail\ Raiford\ -\ 21\ copy.jpg');
     background-size: cover;
     height: 100vh;
     margin: 0;
@@ -272,7 +272,7 @@ html {
   }
 
   #home {
-    background-image: url('/assets/abby-home-resized.png');
+    background-image: url('/assets/Abigail\ Raiford\ -\ 21\ copy.jpg');
     background-size: cover;
     height: 100vh;
     margin: 0;
@@ -358,7 +358,7 @@ html {
 #bio-block p {
   color: #D8DAE1;
   font-family: "Wittgenstein", serif;
-  font-size: 1.25vw;
+  font-size: 1.3vw;
   line-height: 1.75;
 }
 
@@ -457,18 +457,18 @@ html {
 .name-highlight {
   font-weight: 900;
   font-size: 2.5vw;
-  color:#444460;
+  color:#303042;
 }
 
 .highlight {
   font-weight: bold;
   font-size: 1.5vw;
-  color:#444460;
+  color:#303042;
 }
 
 .small-highlight {
   font-weight: 900;
-  color:#444460;
+  color:#303042;
 }
 
 #quote-img-wrapper {
@@ -910,6 +910,13 @@ html {
 }
 
 #recent-box .divider {
+  width: 80%;
+  border: none;
+  border-top: 1px solid #D8DAE1; 
+  margin: 1rem 0; 
+}
+
+#upcoming-box .divider {
   width: 80%;
   border: none;
   border-top: 1px solid #D8DAE1; 
@@ -1359,8 +1366,29 @@ html {
   letter-spacing: 5px;
 }
 
+/* #contact-img-wrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+
+#contact-img {
+  position: relative;
+  margin-top: 20px;
+}
+
+#circle-img-contact {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+  margin: 20px;
+} */
+
 #contact-info-wrapper {
-  margin-top: 6vw;
+  margin-top: 4vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -1558,6 +1586,7 @@ html {
   display: flex;
   justify-content: center;
   text-align: center;
+  bottom: 0;
 }
 
 
