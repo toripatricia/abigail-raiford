@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-#home-btn {
+.gallery-home-btn {
   font-family: "Wittgenstein", serif;
   position: fixed;
   top: 2vw;
@@ -20,6 +20,11 @@ body {
   font-style: italic;
   z-index: 10;
   transition: ease;
+}
+
+.gallery-home-btn:hover {
+  color:rgba(122, 142, 188, 0.7);
+  transition: ease 0.3s;
 }
 
 .gallery-container {
@@ -130,4 +135,11 @@ h2::after {
     padding: 0 20px;
     max-width: 90%;
     word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+
+    .gallery-home-btn {
+        font-size: 3vw;
+    }
 }

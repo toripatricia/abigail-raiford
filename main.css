@@ -291,7 +291,7 @@ html {
 
 /* Bio */
 
-#home-btn {
+.home-btn {
   font-family: "Wittgenstein", serif;
   position: fixed;
   top: 2vw;
@@ -307,7 +307,7 @@ html {
   transition: ease;
 }
 
-#home-btn:hover {
+.home-btn:hover {
   color:rgba(122, 142, 188, 0.7);
   transition: ease 0.3s;
 }
@@ -556,8 +556,8 @@ html {
   font-size: 3.5vw;
 }
 
-#home-btn {
-    font-size: 2.5vw;
+.home-btn {
+    font-size: 3vw;
     position: static;
   }
 
