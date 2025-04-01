@@ -400,7 +400,6 @@ html {
 #bio-main-img {
   display: flex;
   justify-content: center;
-  height: fit-content;
   margin-bottom: 25px;
 }
 
@@ -546,7 +545,7 @@ html {
 }
 
 #quote-wrapper {
-  width: 110%;
+  width: 100%;
 }
 
 .name-highlight {
@@ -562,12 +561,12 @@ html {
     position: static;
   }
 
-  #bio-main-img {
-  width: 100%;
+#meet-abby {
+  width: 90vw;
 }
 
 #rec-img {
-  width: 50vw;
+  width: 65vw;
 }
 }
 
@@ -737,6 +736,10 @@ html {
   font-size: 7vw;
 }
 
+#bio-img {
+  width: 70vw;
+}
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -781,6 +784,11 @@ html {
 #up-next-show h1 {
   font-size: 7vw;
 }
+
+#bio-img {
+  width: 70vw;
+}
+
 }
 
 /* Schedule */
@@ -1523,7 +1531,7 @@ html {
 #social-wrapper h2 {
   font-family: "Wittgenstein", serif;
   font-weight: 400;
-  color:#1b1b1f;
+  color:#303042;
   letter-spacing: 2px;
   font-size: 30px;
   text-align: center;
