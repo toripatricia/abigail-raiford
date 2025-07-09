@@ -868,19 +868,40 @@ html {
   font-size: 1.5vw;
 }
 
-#upcoming-img {
+.upcoming-img {
   height: fit-content;
   width: fit-content;
   padding: 2vw;
 }
 
-#glacier {
-  width: 50%;
+.glacier {
+  height: 12vw;
   transition: 0.3s;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-#glacier:hover {
+.glacier2 {
+  height: 17vw;
+  transition: 0.3s;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.glacier3 {
+  height: 17vw;
+  transition: 0.3s;
+}
+
+.glacier:hover {
+  transform: scale(1.05); 
+  transition: ease 0.3s;
+}
+
+.glacier2:hover {
+  transform: scale(1.05); 
+  transition: ease 0.3s;
+}
+
+.glacier3:hover {
   transform: scale(1.05); 
   transition: ease 0.3s;
 }
