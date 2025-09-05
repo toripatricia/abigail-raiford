@@ -185,6 +185,8 @@ html {
 /* Home */
 
 #home {
+  display: flex;
+  justify-content: flex-end;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -195,6 +197,32 @@ html {
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
+}
+
+#quote-container {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  z-index: 0;
+  padding-right: 3vw;
+}
+
+#quote-box {
+  text-align: center;
+}
+
+.quote-body {
+  font-family: "Bodoni Moda", serif;
+  color: #D8DAE1;
+  z-index: 1;
+  font-size: 2vw;
+}
+
+.quote-source {
+  font-family: "Bodoni Moda", serif;
+  color: white;
+  z-index: 1;
+  font-size: 1.5vw;
 }
 
 #website-title {
@@ -248,6 +276,42 @@ html {
     height: 100vh;
     margin: 0;
   }
+
+  #quote-container {
+  position: absolute;
+  right: 5%;   
+  bottom: 15%;
+  width: 90%;
+  height: fit-content;
+  z-index: 0;
+  margin-bottom: 2vw;
+}
+
+#quote-box {
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(8px);    /* blur whatever is behind */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1vw;
+  border-radius: 40px;
+  z-index: 0;
+}
+
+.quote-body {
+  font-family: "Bodoni Moda", serif;
+  color: #D8DAE1;  
+  font-size: 2.5vw;
+  position: relative;
+  z-index: 1;     
+}
+
+.quote-source {
+  font-family: "Bodoni Moda", serif;
+  color: #D8DAE1;
+  font-size: 2.5vw;
+  position: relative;
+  z-index: 1;
+}
 
   #website-title {
     height: fit-content;
