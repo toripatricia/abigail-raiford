@@ -65,7 +65,7 @@ html {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: white;
+  color: #D8DAE1;
   font-family: "Wittgenstein", serif;
   font-style: italic;
   font-weight: light;
@@ -95,7 +95,7 @@ html {
 }
 
 .sidenav h1 {
-  color: white;
+  color: #D8DAE1;
 }
 
 
@@ -103,7 +103,7 @@ html {
   padding: 10px 15px;
   text-decoration: none;
   font-size: 22px;
-  color: white;
+  color: #D8DAE1;
   display: block;
   transition: 0.3s;
 }
@@ -151,7 +151,7 @@ html {
   text-align: center;
   font-size: 36px;
   font-family: 'Times New Roman', serif; 
-  color: white;
+  color: #D8DAE1;
   margin-bottom: 30px;
   font-family: "Wittgenstein", serif;
   letter-spacing: 5px;
@@ -164,7 +164,7 @@ html {
   top: 50%;
   width: 40px; 
   height: 1px;
-  background-color: white;
+  background-color: #D8DAE1;
 }
 
 .menu-title::before {
@@ -220,7 +220,7 @@ html {
 
 .quote-source {
   font-family: "Bodoni Moda", serif;
-  color: white;
+  color: #D8DAE1;
   z-index: 1;
   font-size: 1.5vw;
 }
@@ -368,7 +368,7 @@ html {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: white;
+  color: #D8DAE1;
   font-style: italic;
   z-index: 10;
   transition: ease;
@@ -624,7 +624,7 @@ html {
 }
 
 .home-btn {
-    font-size: 3vw;
+    font-size: 4vw;
     position: static;
   }
 
@@ -1728,4 +1728,256 @@ html {
   #footer-text p {
     font-size: 1.5vw;
   }
+}
+
+
+/* PRESS */
+
+/* General section wrapper */
+.press-section {
+  position: relative;   /* contain absolutely positioned header */
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+/* Images */
+.press-img img {
+  max-width: 35vw;
+  display: block;
+}
+
+.press-sonnomubla-img img {
+  max-width: 60vw;
+  display: block;
+}
+
+/* Header box (shared styles) */
+.press-header-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%); /* overlap bottom 15% */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(115, 126, 146, 0.75);
+  z-index: 1;
+  
+  max-width: 70vw;
+  height: 20vh;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.press-sonnomubla-header-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%); /* overlap bottom 15% */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(115, 126, 146, 0.75);
+  z-index: 1;
+  
+  width: 75vw;
+  height: 20vh;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Header text */
+.press-header {
+  color: #D8DAE1; 
+  font-family: "Wittgenstein", serif;
+  font-style: italic;
+  font-weight: 50;
+  letter-spacing: 3vw;
+  font-size: 6vw; /* adjust per section if needed */
+  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  padding: 4vw;
+}
+
+.press-sonnombula-header {
+  color: #D8DAE1; 
+  font-family: "Wittgenstein", serif;
+  font-style: italic;
+  font-weight: 50;
+  letter-spacing: 1.5vw;
+  font-size: 5vw; /* adjust per section if needed */
+  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+
+.press-section-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6vw 0; 
+}
+
+.quote-box {
+  margin: 10vw auto 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  text-align: center;
+}
+
+.press-jupiter-header-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%); /* overlap bottom 15% */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(115, 126, 146, 0.75);
+  z-index: 1;
+  
+  width: 80vw;
+  height: 25vh;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.press-jupiter-header {
+  color: #D8DAE1; 
+  font-family: "Wittgenstein", serif;
+  font-style: italic;
+  font-weight: 50;
+  letter-spacing: 1.5vw;
+  font-size: 4vw; /* adjust per section if needed */
+  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  padding: 4vw;
+  text-align: center;
+}
+
+.quote {
+  font-family: "Wittgenstein", serif;
+  color: #192038;
+  letter-spacing: 2px;
+  font-size: 1.25vw;
+  line-height: 150%;
+}
+
+.feature-block {
+  position: relative;   /* contain absolutely positioned header */
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.feature-img img {
+  max-width: 30vw;
+  display: block;
+}
+
+.feature-img img:hover {
+  transform: scale(1.05);
+  transition: ease 0.3s;
+}
+
+.caption-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%); /* overlap bottom 15% */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #343E61;
+  opacity: 0.85;
+  z-index: 1;
+  
+  width: 50vw;
+  height: 10vh;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.feature-caption {
+  color: #D8DAE1; 
+  font-family: "Wittgenstein", serif;
+  font-style: italic;
+  font-weight: 50;
+  letter-spacing: 2px;
+  font-size: 1.25vw; /* adjust per section if needed */
+  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+#press-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+#press-logo {
+  height: 150px;
+
+}
+
+.press-section-divider-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw 0; 
+}
+
+@media (max-width: 768px) {
+  
+  .press-img img {
+    max-width: 60vw;
+  }
+
+  .press-header-box {
+    height: 12vh;
+    width: 70vw;
+  }
+
+  .press-sonnomubla-img img {
+    max-height: 70vh;
+  }
+
+  .press-sonnomubla-header-box {
+    height: 8vh;
+    width: 70vw;
+  }
+
+  .quote {
+    font-size: 2.5vw;
+  }
+
+  .press-jupiter-header-box {
+    height: 10vh;
+    width: 80vw;
+    margin-bottom: 4vw;
+  }
+
+  .feature-img img {
+  max-width: 50vw;
+  }
+
+  .caption-box {
+    width: 75vw;
+    padding: 1.5vw;
+  }
+
+  .feature-caption {
+    font-size: 2.5vw;
+  }
+
 }
