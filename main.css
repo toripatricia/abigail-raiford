@@ -1743,12 +1743,17 @@ html {
 
 /* Images */
 .press-img img {
-  max-width: 35vw;
+  width: 40vw;
   display: block;
 }
 
 .press-sonnomubla-img img {
-  max-width: 60vw;
+  width: 60vw;
+  display: block;
+}
+
+.press-jupiter-img img {
+  width: 60vw;
   display: block;
 }
 
@@ -1766,7 +1771,7 @@ html {
   background-color: rgba(115, 126, 146, 0.75);
   z-index: 1;
   
-  max-width: 70vw;
+  width: 70vw;
   height: 20vh;
   margin: 0 auto;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
@@ -1819,7 +1824,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 6vw 0; 
+  margin-top: 10vw; 
 }
 
 .quote-box {
@@ -1940,21 +1945,25 @@ html {
 @media (max-width: 768px) {
   
   .press-img img {
-    max-width: 60vw;
+    width: 75vw;
   }
 
   .press-header-box {
     height: 12vh;
-    width: 70vw;
+    width: 90vw;
   }
 
   .press-sonnomubla-img img {
-    max-height: 70vh;
+    width: 85vw;
+  }
+
+   .press-jupiter-img img {
+    width: 85vw;
   }
 
   .press-sonnomubla-header-box {
     height: 8vh;
-    width: 70vw;
+    width: 90vw;
   }
 
   .quote {
@@ -1963,7 +1972,7 @@ html {
 
   .press-jupiter-header-box {
     height: 10vh;
-    width: 80vw;
+    width: 90vw;
     margin-bottom: 4vw;
   }
 
@@ -1979,5 +1988,13 @@ html {
   .feature-caption {
     font-size: 2.5vw;
   }
+
+  .press-section-divider {
+  margin-top: 17vw; 
+}
+
+.quote-box {
+  margin-top: 15vw;
+}
 
 }
