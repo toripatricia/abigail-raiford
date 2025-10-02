@@ -328,6 +328,8 @@ html {
 }
 }
 
+/* IPAD STYLING */
+
 @media (min-width: 769px) and (max-width: 1024px) {
 
   body, html {
@@ -353,6 +355,39 @@ html {
     height: fit-content;
     overflow: auto;
   }
+
+  #quote-box {
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(8px);    /* blur whatever is behind */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1vw;
+  border-radius: 40px;
+  z-index: 0;
+}
+
+ .press-sonnomubla-header-box {
+    height: 8vh;
+    width: 90vw;
+  }
+
+  .press-header-box {
+    height: 12vh;
+    width: 90vw;
+  }
+
+  .press-section {
+  margin-top: 5vh;
+}
+
+ .quote {
+    font-size: 3vw;
+  }
+  
+  .press-section-divider {
+  margin-top: 17vw; 
+}
+
 }
 
 
@@ -1738,7 +1773,7 @@ html {
   position: relative;   /* contain absolutely positioned header */
   display: flex;
   justify-content: center;
-  margin-top: 10vh;
+  margin-top: 9vh;
 }
 
 /* Images */
@@ -1995,6 +2030,11 @@ html {
 
 .quote-box {
   margin-top: 15vw;
+  width: 80%;
+}
+
+.press-section {
+  margin-top: 5vh;
 }
 
 }
